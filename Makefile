@@ -16,7 +16,7 @@ obj-$(CONFIG_SECURITY_SELINUX)		+= selinux/built-in.o
 obj-$(CONFIG_SECURITY_CAPABILITIES)	+= commoncap.o capability.o
 obj-$(CONFIG_SECURITY_ROOTPLUG)		+= commoncap.o root_plug.o
 
-obj-m += sample.o
+obj-m += pindown.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
